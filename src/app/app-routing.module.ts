@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
     import { Routes, RouterModule } from '@angular/router';  
     import { EmployeeComponent } from "./employee/employee.component";  
     import { AddemployeeComponent } from "./addemployee/addemployee.component";  
-    import { LoginComponent } from "./login/login.component";  
+    import { LoginPageComponent } from "./login/login.component";  
+    import  { AddUserComponent } from "./add-user/add-user.component"
 
     const routes: Routes = [  
 
-     {path:"",component: LoginComponent},
+     {path:"",component: LoginPageComponent},
      {path:"employee",component:EmployeeComponent},  
      {path:"addemployee",component:AddemployeeComponent},  
-     {path:"login",component:LoginComponent},
+     {path:"adduser",component:AddUserComponent},
+     {path:"login",component:LoginPageComponent},
      {path:"**",component: EmployeeComponent}
     ];  
     
