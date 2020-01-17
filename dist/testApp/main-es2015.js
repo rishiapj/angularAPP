@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \r\n    <div class=\"row\">    \r\n      <div class=\"col-md-10 mx-auto\">    \r\n        <div class=\"card mx-4\">   \r\n          <div class=\"card-head p-4\">  \r\n              <div class=\"col-sm-12 btn btn-success\">  \r\n                  Employee's Information  \r\n                </div>  \r\n          </div>   \r\n          <div class=\"card-body p-4\">    \r\n       <form [formGroup]=\"Addemployee\" (ngSubmit)=\"onFormSubmit(Addemployee.value)\">  \r\n      <div class=\"col-sm-12\">  \r\n        <div class=\"card-body\">  \r\n          <!-- <div class=\"row\"> -->  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"Department\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"Address\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \r\n            </div>  \r\n          </div>  \r\n        </div>  \r\n      </div>  \r\n      <div class=\"col-6 text-right\">    \r\n          <button class=\"btn btn-primary px-10\" type=\"submit\" >Add </button>  \r\n        </div>  \r\n    </form>  \r\n    <div class=\"row\"  *ngIf=\"dataSaved\">\r\n      <div class=\"col-xs-12\">\r\n        <p class=\"alert alert-success\">\r\n            <strong>Registration Success!</strong> Please click here to login!.\r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n \r\n    </div>    \r\n    </div>   \r\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \r\n    <div class=\"row\">    \r\n      <div class=\"col-md-10 mx-auto\">    \r\n        <div class=\"card mx-4\">   \r\n          <div class=\"card-head p-4\">  \r\n              <div class=\"col-sm-12 btn btn-success\">  \r\n                  Employee's Information  \r\n                </div>  \r\n          </div>   \r\n          <div class=\"card-body p-4\">    \r\n       <form [formGroup]=\"Addemployee\" (ngSubmit)=\"onFormSubmit(Addemployee.value)\">  \r\n      <div class=\"col-sm-12\">  \r\n        <div class=\"card-body\">  \r\n          <!-- <div class=\"row\"> -->  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"Department\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"Address\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group\">\r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <select formControlName=\"Country\" class=\"form-control\" (change)=\"onChangeCountry($event.target.value)\">\r\n              <option value=\"\">Select country...</option>\r\n              <option *ngFor=\"let country of countries\" [value]=\"country.id\">{{country.Name}}</option>\r\n            </select>\r\n          </div>\r\n        </div>  \r\n      </div>  \r\n      <div class=\"col-6 text-right\">    \r\n          <button class=\"btn btn-primary px-10\" type=\"submit\" >{{btnText}} </button>  \r\n        </div>  \r\n    </form>  \r\n    <div class=\"row\"  *ngIf=\"dataSaved\">\r\n      <div class=\"col-xs-12\">\r\n        <p class=\"alert alert-success\">\r\n            <strong>{{massage}}</strong> \r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n \r\n    </div>    \r\n    </div>   \r\n  </div>");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<app-login-page></app-login-page>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city}}</td>  \r\n          <td>{{e.country}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city}}</td>  \r\n          <td>{{e.country}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n  </div>");
 
 /***/ }),
 
@@ -466,6 +466,7 @@ let AddemployeeComponent = class AddemployeeComponent {
         this.emprecordService = emprecordService;
         this.dataSaved = false;
         this.EmployeeIdUpdate = "0";
+        this.btnText = "Save";
     }
     InsertEmployee(employee) {
         debugger;
@@ -476,7 +477,7 @@ let AddemployeeComponent = class AddemployeeComponent {
                 this.massage = 'Saved Successfully';
             }
             else {
-                this.massage = 'Update Successfully';
+                this.massage = 'Updated Successfully';
             }
             this.dataSaved = true;
             this.router.navigate(['/addemployee']);
@@ -500,6 +501,7 @@ let AddemployeeComponent = class AddemployeeComponent {
             this.Addemployee.controls['Address'].setValue(emp.address);
         });
         debugger;
+        this.btnText = "Update";
     }
     clearform() {
         debugger;
@@ -515,12 +517,13 @@ let AddemployeeComponent = class AddemployeeComponent {
             Department: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
             Address: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
             City: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
-            Country: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            Country: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
         });
         let Id = localStorage.getItem("id");
         if (Id != null) {
             this.EmployeeEdit(Id);
         }
+        this.emprecordService.getCountries().subscribe(data => this.countries = data);
     }
 };
 AddemployeeComponent.ctorParameters = () => [
@@ -783,6 +786,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
 
 
 
@@ -790,6 +797,16 @@ let EmprecordService = class EmprecordService {
     constructor(http) {
         this.http = http;
         this.Url = "http://localhost:5000/Api/Employee/";
+        this.apiBaseUrl = "http://localhost:5000/";
+    }
+    getCountries() {
+        return this.http.get(`${this.apiBaseUrl}Api/Employee/GetAllCountry`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError));
+    }
+    getStates(countryId) {
+        return this.http.get(`${this.apiBaseUrl}api/states/${countryId}`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError));
+    }
+    getCities(stateId) {
+        return this.http.get(`${this.apiBaseUrl}api/cities/${stateId}`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError));
     }
     GetLoginDetails(userid, password) {
         debugger;
@@ -820,6 +837,19 @@ let EmprecordService = class EmprecordService {
         debugger;
         const httpOptions = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' }) };
         return this.http.post(this.Url + '/UpdateEmployee/', employee, httpOptions);
+    }
+    handleError(error) {
+        if (error.error instanceof ErrorEvent) {
+            // A client-side or network error occurred. Handle it accordingly.
+            console.error('An error occurred:', error.error.message);
+        }
+        else {
+            // The backend returned an unsuccessful response code.
+            // The response body may contain clues as to what went wrong,
+            console.error(`Backend returned code ${error.status}, ` + `body was: ${error.error}`);
+        }
+        // return an observable with a user-facing error message
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])('Something bad happened. Please try again later.');
     }
 };
 EmprecordService.ctorParameters = () => [

@@ -19,6 +19,9 @@ export class AddemployeeComponent implements OnInit {
   Addemployee:FormGroup;  
   EmployeeIdUpdate = "0";  
   btnText ="Save";
+  countries: {};
+  states: {};
+  cities: {};
   constructor(private router: Router,private emprecordService:EmprecordService) { }  
   InsertEmployee(employee:Employee)  
   {  
@@ -72,11 +75,41 @@ debugger;
       Department:new FormControl(),  
       Address:new FormControl(),  
       City:new FormControl(),  
-      Country:new FormControl(),  
+      Country: new FormControl(''),
   });  
   let Id = localStorage.getItem("id");  
 if(Id!=null)  
 {  
   this.EmployeeEdit(Id) ;  
- }}  
+ }
+
+ this.emprecordService.getCountries().subscribe(
+  data => this.countries = data
+);
+
+}  
+
+onChangeCountry(countryId: number) {
+  if (countryId) {
+    this.emprecordService.getStates(countryId).subscribe(
+      data => {
+        this.states = data;
+        this.cities = null;
+      }
+    );
+  } else {
+    this.states = null;
+    this.cities = null;
+  }
+}
+
+onChangeState(stateId: number) {
+  if (stateId) {
+    this.emprecordService.getCities(stateId).subscribe(
+      data => this.cities = data
+    );
+  } else {
+    this.cities = null;
+  }
+}
 }
