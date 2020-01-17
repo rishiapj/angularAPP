@@ -23,6 +23,19 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-user/add-user.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/add-user/add-user.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \n    <div class=\"row\">    \n      <div class=\"col-md-10 mx-auto\">    \n        <div class=\"card mx-4\">   \n          <div class=\"card-head p-4\">  \n              <div class=\"col-sm-12 btn btn-success\">  \n                  User's Information  \n                </div>  \n          </div>   \n          <div class=\"card-body p-4\">    \n       <form [formGroup]=\"AddUser\" (ngSubmit)=\"onFormSubmit(AddUser.value)\">  \n      <div class=\"col-sm-12\">  \n        <div class=\"card-body\">  \n          <!-- <div class=\"row\"> -->  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter User ID\" formControlName=\"UserName\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Address\">Password</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Password\" formControlName=\"Password\">  \n            </div>  \n          </div>  \n        </div>  \n      </div>  \n      <div class=\"col-6 text-right\">    \n          <button class=\"btn btn-primary px-10\" type=\"submit\" >Add </button>  \n        </div>  \n    </form>  \n        </div>    \n      </div>    \n    </div>    \n    </div>   \n  </div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/addemployee/addemployee.component.html":
 /*!**********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/addemployee/addemployee.component.html ***!
@@ -32,7 +45,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \n    <div class=\"row\">    \n      <div class=\"col-md-10 mx-auto\">    \n        <div class=\"card mx-4\">   \n          <div class=\"card-head p-4\">  \n              <div class=\"col-sm-12 btn btn-success\">  \n                  Employee's Information  \n                </div>  \n          </div>   \n          <div class=\"card-body p-4\">    \n       <form [formGroup]=\"Addemployee\" (ngSubmit)=\"onFormSubmit(Addemployee.value)\">  \n      <div class=\"col-sm-12\">  \n        <div class=\"card-body\">  \n          <!-- <div class=\"row\"> -->  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"Department\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"Address\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \n            </div>  \n          </div>  \n          <div class=\"form-group \">  \n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \n            <div class=\"col-sm-10\">  \n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \n            </div>  \n          </div>  \n        </div>  \n      </div>  \n      <div class=\"col-6 text-right\">    \n          <button class=\"btn btn-primary px-10\" type=\"submit\" >Add </button>  \n        </div>  \n    </form>  \n        </div>    \n      </div>    \n    </div>    \n    </div>   \n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \r\n    <div class=\"row\">    \r\n      <div class=\"col-md-10 mx-auto\">    \r\n        <div class=\"card mx-4\">   \r\n          <div class=\"card-head p-4\">  \r\n              <div class=\"col-sm-12 btn btn-success\">  \r\n                  Employee's Information  \r\n                </div>  \r\n          </div>   \r\n          <div class=\"card-body p-4\">    \r\n       <form [formGroup]=\"Addemployee\" (ngSubmit)=\"onFormSubmit(Addemployee.value)\">  \r\n      <div class=\"col-sm-12\">  \r\n        <div class=\"card-body\">  \r\n          <!-- <div class=\"row\"> -->  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"Department\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"Address\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \r\n            </div>  \r\n          </div>  \r\n        </div>  \r\n      </div>  \r\n      <div class=\"col-6 text-right\">    \r\n          <button class=\"btn btn-primary px-10\" type=\"submit\" >Add </button>  \r\n        </div>  \r\n    </form>  \r\n    <div class=\"row\"  *ngIf=\"dataSaved\">\r\n      <div class=\"col-xs-12\">\r\n        <p class=\"alert alert-success\">\r\n            <strong>Registration Success!</strong> Please click here to login!.\r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n \r\n    </div>    \r\n    </div>   \r\n  </div>");
 
 /***/ }),
 
@@ -45,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-fixed-top navbar-dark bg-inverse\">\n  <div class=\"container\">\n      <a class=\"navbar-brand\">Angular Router</a>\n      <ul class=\"nav navbar-nav\" routerLinkActive=\"active\">\n          <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">Home</a></li>\n          <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">About</a></li>\n          <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">Courses</a></li>\n      </ul>\n  </div>\n</nav>\n\n<router-outlet></router-outlet>\n\n\n\n\n\n\n\n ");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<router-outlet></router-outlet>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n ");
 
 /***/ }),
 
@@ -58,7 +71,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \n    <div class=\"row\">  \n      <div class=\"col-sm-12 btn btn-success\">  \n        Employee's Information  \n      </div>  \n    </div>  \n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \n      <div class=\"row\">  \n        <div class=\"col-sm-6\">  \n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \n            Add New Employee  \n          </button>   \n        </div>  \n        <div class=\"col-sm-6\">  \n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\n        </div>  \n      </div>  \n    </div>  \n  </div>  \n  <div class=\"container\" style=\"padding-top:20px;\">  \n    <table class=\"table table-striped\">  \n      <thead class=\"thead-dark\">        \n        <th>Name</th>  \n        <th>Department</th>  \n        <th>Address</th>  \n        <th>City</th>  \n        <th>Country</th>  \n        <th>Action</th>  \n      </thead>  \n      <tbody>  \n        <tr *ngFor=\"let e of emp\">          \n          <td>{{e.name}}</td>  \n          <td>{{e.department}}</td>  \n          <td>{{e.address}}</td>  \n          <td>{{e.city}}</td>  \n          <td>{{e.country}}</td>\n          <td>  \n            <div class=\"btn-group\">  \n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \n            </div>  \n          </td>  \n        </tr>  \n      </tbody>    \n    </table>  \n    <!-- <ul class=\"pagination\">  \n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \n    </ul>   -->\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<app-login-page></app-login-page>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city}}</td>  \r\n          <td>{{e.country}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n  </div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-fixed-top navbar-dark bg-inverse\">\r\n    <div class=\"container\">\r\n        <a class=\"navbar-brand\">Angular Router</a>\r\n        <ul class=\"nav navbar-nav\" routerLinkActive=\"active\">\r\n            <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">Home</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">About</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/employee']\">Courses</a></li>\r\n        </ul>\r\n    </div>\r\n  </nav>\r\n  ");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<p>home works!</p>\r\n");
 
 /***/ }),
 
@@ -71,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1 style=\"text-align:center\">\n    Angular Login Example\n  </h1>\n  <div class=\"login\">\n    <h2 class=\"login-header\">Log in</h2>\n    <form [formGroup]=\"loginForm\" class=\"login-container\" (ngSubmit)=\"login()\">\n  \n      <p [ngClass]=\"{ 'has-error': isSubmitted && formControls.email.errors }\">\n        <input type=\"email\" placeholder=\"Email\" formControlName=\"email\">\n      </p>\n  \n      <div *ngIf=\"isSubmitted && formControls.email.errors\" class=\"help-block\">\n        <div *ngIf=\"formControls.email.errors.required\">Email is required</div>\n      </div>\n  \n      <p [ngClass]=\"{ 'has-error': isSubmitted && formControls.password.errors }\">\n        <input type=\"password\" placeholder=\"Password\" formControlName=\"password\">\n      </p>\n  \n      <div *ngIf=\"isSubmitted && formControls.password.errors\" class=\"help-block\">\n        <div *ngIf=\"formControls.password.errors.required\">Password is required</div>\n      </div>\n  \n      <p>\n        <input type=\"submit\" value=\"Log in\">\n      </p>\n    </form>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"jumbotron row align-items-center justify-content-center h-100\">\n  <div class=\"col col-sm-6 col-md-6 col-lg-4 col-xl-3\">\n<form #userForm='ngForm'>\n<h3>Login Page</h3>\n<div class=\"form-group\">\n  <input  type=\"text\" class=\"form-control\"  required #name=\"ngModel\" name=\"Name\" placeholder=\"Username\" [(ngModel)]=\"UserName\">\n  <small class=\"text-danger\" [class.d-none]=\"name.valid || name.untouched\">UserName is required</small>\n</div>\n<div class=\"form-group\"> \n  <input type=\"password\" required  #password=\"ngModel\" class=\"form-control\" name=\"Password\" placeholder=\"Password\" [(ngModel)]=\"Password\">\n  <small class=\"text-danger\" [class.d-none]=\"password.valid || password.untouched\">Password is required</small>\n</div>\n<div class=\"form-group\">\n<button (click)=\"onClick()\" type=\"button\" class=\"col col-sm-12 col-md-6 col-lg-6 col-xl-6 btn btn-outline-secondary\">Login</button>\n<button routerLink=\"/adduser\" class=\"col col-sm-12 col-md-6 col-lg-6 col-xl-6 btn btn-outline-secondary\" type=\"button\">SignUp</button>\n\n</div>\n</form>\n</div>\n</div>\n");
 
 /***/ }),
 
@@ -304,6 +343,90 @@ function __importDefault(mod) {
 
 /***/ }),
 
+/***/ "./src/app/add-user/add-user.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/add-user/add-user.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZC11c2VyL2FkZC11c2VyLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/add-user/add-user.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/add-user/add-user.component.ts ***!
+  \************************************************/
+/*! exports provided: AddUserComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddUserComponent", function() { return AddUserComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _emprecord_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../emprecord.service */ "./src/app/emprecord.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+let AddUserComponent = class AddUserComponent {
+    constructor(router, emprecordService) {
+        this.router = router;
+        this.emprecordService = emprecordService;
+        this.dataSaved = false;
+        this.UserIdUpdate = "0";
+    }
+    InsertUser(user) {
+        debugger;
+        if (this.UserIdUpdate != "0")
+            user.Id = this.UserIdUpdate;
+        this.emprecordService.InsertUser(user).subscribe(() => {
+            if (this.UserIdUpdate == "0") {
+                this.massage = 'Saved Successfully';
+            }
+            else {
+                this.massage = 'Update Successfully';
+            }
+            this.dataSaved = true;
+            this.router.navigate(['/login']);
+        });
+    }
+    onFormSubmit() {
+        const Emp = this.AddUser.value;
+        alert('');
+        this.InsertUser(Emp);
+    }
+    ngOnInit() {
+        this.AddUser = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+            Name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            UserName: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            Password: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+        });
+    }
+};
+AddUserComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _emprecord_service__WEBPACK_IMPORTED_MODULE_3__["EmprecordService"] }
+];
+AddUserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-add-user',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-user.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-user/add-user.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-user.component.css */ "./src/app/add-user/add-user.component.css")).default]
+    })
+], AddUserComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/addemployee/addemployee.component.css":
 /*!*******************************************************!*\
   !*** ./src/app/addemployee/addemployee.component.css ***!
@@ -356,7 +479,7 @@ let AddemployeeComponent = class AddemployeeComponent {
                 this.massage = 'Update Successfully';
             }
             this.dataSaved = true;
-            this.router.navigate(['/employee']);
+            this.router.navigate(['/addemployee']);
         });
     }
     onFormSubmit() {
@@ -431,15 +554,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
 /* harmony import */ var _addemployee_addemployee_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./addemployee/addemployee.component */ "./src/app/addemployee/addemployee.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./add-user/add-user.component */ "./src/app/add-user/add-user.component.ts");
+
 
 
 
 
 
 const routes = [
+    { path: "", component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginPageComponent"] },
     { path: "employee", component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_2__["EmployeeComponent"] },
     { path: "addemployee", component: _addemployee_addemployee_component__WEBPACK_IMPORTED_MODULE_3__["AddemployeeComponent"] },
-    { path: "login", component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
+    { path: "adduser", component: _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_5__["AddUserComponent"] },
+    { path: "login", component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginPageComponent"] },
+    { path: "**", component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_2__["EmployeeComponent"] }
 ];
 // @NgModule({  
 //   imports: [RouterModule.forRoot(routes)],  
@@ -513,7 +641,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _addemployee_addemployee_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./addemployee/addemployee.component */ "./src/app/addemployee/addemployee.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./add-user/add-user.component */ "./src/app/add-user/add-user.component.ts");
+
+
+
 
 
 
@@ -532,7 +666,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
             _employee_employee_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeComponent"],
             _addemployee_addemployee_component__WEBPACK_IMPORTED_MODULE_6__["AddemployeeComponent"],
-            _login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"]
+            _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginPageComponent"],
+            _header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
+            _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_12__["AddUserComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -598,7 +735,6 @@ let EmployeeComponent = class EmployeeComponent {
     }
     EmployeeEdit(id) {
         debugger;
-        alert(id);
         localStorage.removeItem("id");
         localStorage.setItem("id", id.toString());
         this.router.navigate(['/addemployee'], { queryParams: { Id: id } });
@@ -610,6 +746,7 @@ let EmployeeComponent = class EmployeeComponent {
                 this.dataSaved = true;
                 this.massage = "Deleted Successfully";
             });
+            this.router.navigate(['/employee']);
         }
     }
     ngOnInit() {
@@ -654,6 +791,16 @@ let EmprecordService = class EmprecordService {
         this.http = http;
         this.Url = "http://localhost:5000/Api/Employee/";
     }
+    GetLoginDetails(userid, password) {
+        debugger;
+        const httpOptions = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' }) };
+        return this.http.post(this.Url + 'GetUserByUserIdAndPassword' + '?userid=' + userid + '&password=' + password, httpOptions);
+    }
+    InsertUser(user) {
+        debugger;
+        const httpOptions = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' }) };
+        return this.http.post(this.Url + 'InsertUser', JSON.stringify(user), httpOptions);
+    }
     InsertEmployee(employee) {
         debugger;
         const httpOptions = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' }) };
@@ -688,6 +835,94 @@ EmprecordService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/header/header.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/header/header.component.css ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/header/header.component.ts ***!
+  \********************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HeaderComponent = class HeaderComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-header',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./header.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")).default]
+    })
+], HeaderComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HomeComponent = class HomeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-home',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")).default]
+    })
+], HomeComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/login/login.component.css":
 /*!*******************************************!*\
   !*** ./src/app/login/login.component.css ***!
@@ -705,28 +940,68 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************!*\
   !*** ./src/app/login/login.component.ts ***!
   \******************************************/
-/*! exports provided: LoginComponent */
+/*! exports provided: LoginPageComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageComponent", function() { return LoginPageComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _emprecord_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../emprecord.service */ "./src/app/emprecord.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-let LoginComponent = class LoginComponent {
-    constructor() { }
+
+
+let LoginPageComponent = class LoginPageComponent {
+    constructor(_loginService, router) {
+        this._loginService = _loginService;
+        this.router = router;
+        this.UserName = '';
+        this.Password = '';
+        this.flag = 0;
+        this.loginDetails = [];
+    }
     ngOnInit() {
+        // this._loginService.GetLoginDetails()
+        // .subscribe(data=>this.loginDetails=data);
+    }
+    onClick() {
+        if (this.UserName === '' || this.Password === '') {
+            return alert("Input Fields can't be Empty!!");
+        }
+        else {
+            this._loginService.GetLoginDetails(this.UserName, this.Password).subscribe(emp => {
+                debugger;
+                this.flag = 1;
+                // this.EmployeeIdUpdate=id;
+                // this.Addemployee.controls['Name'].setValue(emp.name);  
+                // this.Addemployee.controls['Department'].setValue(emp.department);  
+                // this.Addemployee.controls['City'].setValue(emp.city);  
+                // this.Addemployee.controls['Country'].setValue(emp.country);  
+                // this.Addemployee.controls['Address'].setValue(emp.address);  
+            });
+            if (this.flag == 0) {
+                return alert("Login Faild. Invalid Credentials!!");
+            }
+            else if (this.flag == 1) {
+                this.router.navigate(['/employee']);
+            }
+        }
     }
 };
-LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+LoginPageComponent.ctorParameters = () => [
+    { type: _emprecord_service__WEBPACK_IMPORTED_MODULE_2__["EmprecordService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+];
+LoginPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-login',
+        selector: 'app-login-page',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/login/login.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")).default]
     })
-], LoginComponent);
+], LoginPageComponent);
 
 
 
@@ -797,7 +1072,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Project\testApp\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Project\AngularApp\angularAPP\src\main.ts */"./src/main.ts");
 
 
 /***/ })

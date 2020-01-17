@@ -37,6 +37,7 @@ import { first} from "rxjs/operators";
               this.massage = "Deleted Successfully";  
             }  
           );  
+          this.router.navigate(['/employee']);  
         }  
       }  
       ngOnInit() {  

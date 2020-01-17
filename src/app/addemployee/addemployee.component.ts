@@ -18,6 +18,7 @@ export class AddemployeeComponent implements OnInit {
   dataSaved = false;  
   Addemployee:FormGroup;  
   EmployeeIdUpdate = "0";  
+  btnText ="Save";
   constructor(private router: Router,private emprecordService:EmprecordService) { }  
   InsertEmployee(employee:Employee)  
   {  
@@ -31,10 +32,10 @@ debugger;
           }  
           else  
           {  
-            this.massage = 'Update Successfully';  
+            this.massage = 'Updated Successfully';  
           }  
           this.dataSaved = true;  
-          this.router.navigate(['/employee']);  
+          this.router.navigate(['/addemployee']);  
         })  
   }  
   onFormSubmit() {  
@@ -55,6 +56,7 @@ debugger;
       this.Addemployee.controls['Address'].setValue(emp.address);  
     });  
     debugger;  
+    this.btnText ="Update";
   }  
   clearform() {  
     debugger;  
