@@ -1,6 +1,6 @@
 export class State {
     id: string;  
-    stateid: string; 
+    stateId: string; 
     name: string;   
     countryId: string;  
     code:string;

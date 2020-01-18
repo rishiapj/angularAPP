@@ -17,17 +17,14 @@ import { first} from "rxjs/operators";
       constructor(private router: Router,private emprecordService:EmprecordService) { }  
        Loademployee()  
        {  
-          debugger;  
           this.emprecordService.GetEmployeeRecord().pipe(first()).subscribe(emp=>{
             this.emp=emp;
           });
        }  
        EmployeeEdit(id: string) {  
-        debugger;  
        localStorage.removeItem("id");  
        localStorage.setItem("id",id.toString());  
         this.router.navigate(['/addemployee'], { queryParams: { Id: id } });  
-        debugger;  
       }  
        Deleteemployee(id: string) {  
         if (confirm("Are You Sure To Delete this Informations")) {  
@@ -37,7 +34,8 @@ import { first} from "rxjs/operators";
               this.massage = "Deleted Successfully";  
             }  
           );  
-          this.router.navigate(['/employee']);  
+          this.router.navigate(['/employee']); 
+          this.Loademployee(); 
         }  
       }  
       ngOnInit() {  

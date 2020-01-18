@@ -31,9 +31,9 @@ export class AddemployeeComponent implements OnInit {
     var country = new Country();
     var city = new City();
     var state = new State();
-    country.countryid = this.Addemployee.controls['CountryId'].value;
-    city.cityid = this.Addemployee.controls['CityId'].value;
-    state.stateid= this.Addemployee.controls['StateId'].value;
+    country.countryId = this.Addemployee.controls['CountryId'].value;
+    city.cityId = this.Addemployee.controls['CityId'].value;
+    state.stateId= this.Addemployee.controls['StateId'].value;
     employee.country = country;
     employee.city = city;
     employee.state = state;
@@ -60,16 +60,36 @@ export class AddemployeeComponent implements OnInit {
 
 
   EmployeeEdit(id: string) {  
+    this.emprecordService.getCountries().subscribe(
+      data => this.countries = data
+    );
       this.emprecordService.GetEmployeeById(id).subscribe(emp => {  
-      this.massage = null;  
-      this.dataSaved = false;  
-      this.EmployeeIdUpdate=id;
-      this.Addemployee.controls['Name'].setValue(emp.name);  
-      this.Addemployee.controls['Department'].setValue(emp.department);  
-      this.Addemployee.controls['Address'].setValue(emp.address);  
-      this.Addemployee.controls['Country'].setValue(emp.country.name); 
-      this.Addemployee.controls['State'].setValue(emp.state.name);   
-      this.Addemployee.controls['City'].setValue(emp.city.name);   
+        this.massage = null;  
+        this.dataSaved = false;  
+        this.EmployeeIdUpdate=id;
+        this.Addemployee.controls['Name'].setValue(emp.name);  
+        this.Addemployee.controls['Department'].setValue(emp.department);  
+        this.Addemployee.controls['Address'].setValue(emp.address);  
+        this.Addemployee.controls['CountryId'].setValue(emp.country.countryId); 
+        if (emp.country.countryId) {
+      this.emprecordService.getStates(Number(emp.country.countryId)).subscribe(
+        data => {
+          this.states = data;     
+        }
+      );
+    } else {
+      this.states = null;
+      this.cities = null;
+    }
+        this.Addemployee.controls['StateId'].setValue(emp.state.stateId); 
+         if (emp.state.stateId) {
+      this.emprecordService.getCities(Number(emp.state.stateId)).subscribe(
+        data => this.cities = data
+      );
+    } else {
+      this.cities = null;
+    }  
+        this.Addemployee.controls['CityId'].setValue(emp.city.cityId);     
     });  
     this.btnText ="Update";
   }  
@@ -97,10 +117,12 @@ if(Id!=null)
 {  
   this.EmployeeEdit(Id) ;  
  }
+ else{
 
  this.emprecordService.getCountries().subscribe(
   data => this.countries = data
 );
+ }
 
  }
 
