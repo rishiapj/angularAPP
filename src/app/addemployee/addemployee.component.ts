@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';  
 import { HttpClient } from "@angular/common/http";  
-import { FormGroup, FormControl } from '@angular/forms';  
+import { FormGroup, FormControl,FormBuilder  } from '@angular/forms';  
 import { EmprecordService } from "../emprecord.service";  
 import { Employee } from "../employee";  
 import { Observable } from "rxjs";  
 import { identifierModuleUrl } from '@angular/compiler';  
 import { Router } from '@angular/router';  
-
+import { Country } from '../country';
+import { State } from '../state';
+import { City } from '../city';
 @Component({  
   selector: 'app-addemployee',  
   templateUrl: './addemployee.component.html',  
@@ -22,11 +24,19 @@ export class AddemployeeComponent implements OnInit {
   countries: {};
   states: {};
   cities: {};
-  constructor(private router: Router,private emprecordService:EmprecordService) { }  
+  constructor(private router: Router, private formBuilder:FormBuilder,private emprecordService:EmprecordService) { }  
   InsertEmployee(employee:Employee)  
   {  
-debugger;  
-    if (this.EmployeeIdUpdate != "0") employee.Id=this.EmployeeIdUpdate;  
+    if (this.EmployeeIdUpdate != "0") employee.Id=this.EmployeeIdUpdate; 
+    var country = new Country();
+    var city = new City();
+    var state = new State();
+    country.countryid = this.Addemployee.controls['CountryId'].value;
+    city.cityid = this.Addemployee.controls['CityId'].value;
+    state.stateid= this.Addemployee.controls['StateId'].value;
+    employee.country = country;
+    employee.city = city;
+    employee.state = state;
       this.emprecordService.InsertEmployee(employee).subscribe(  
         ()=>  
         {  
@@ -41,28 +51,29 @@ debugger;
           this.router.navigate(['/addemployee']);  
         })  
   }  
+
+
   onFormSubmit() {  
     const Emp = this.Addemployee.value;  
     this.InsertEmployee(Emp);  
   }  
+
+
   EmployeeEdit(id: string) {  
-    debugger;     
-    this.emprecordService.GetEmployeeById(id).subscribe(emp => {  
+      this.emprecordService.GetEmployeeById(id).subscribe(emp => {  
       this.massage = null;  
       this.dataSaved = false;  
-      debugger;  
       this.EmployeeIdUpdate=id;
       this.Addemployee.controls['Name'].setValue(emp.name);  
       this.Addemployee.controls['Department'].setValue(emp.department);  
-      this.Addemployee.controls['City'].setValue(emp.city);  
-      this.Addemployee.controls['Country'].setValue(emp.country);  
       this.Addemployee.controls['Address'].setValue(emp.address);  
+      this.Addemployee.controls['Country'].setValue(emp.country.name); 
+      this.Addemployee.controls['State'].setValue(emp.state.name);   
+      this.Addemployee.controls['City'].setValue(emp.city.name);   
     });  
-    debugger;  
     this.btnText ="Update";
   }  
   clearform() {  
-    debugger;  
     this.Addemployee.controls['Name'].setValue("");  
     this.Addemployee.controls['Department'].setValue("");  
     this.Addemployee.controls['Address'].setValue("");  
@@ -77,7 +88,9 @@ debugger;
       CountryId: new FormControl(''),
       StateId: new FormControl(''),
       CityId:new FormControl(""),  
-
+      City: this.formBuilder.group(new City()),
+      Country: this.formBuilder.group(new Country()),
+      State: this.formBuilder.group(new State()),
   });  
   let Id = localStorage.getItem("id");  
 if(Id!=null)  
@@ -89,7 +102,7 @@ if(Id!=null)
   data => this.countries = data
 );
 
-}  
+ }
 
 onChangeCountry(countryId: number) {
   if (countryId) {

@@ -62,7 +62,7 @@ export class EmprecordService {
     debugger;  
    return this.http.get<number>(this.Url + 'Delete/?id='+id);  
   }  
-  GetEmployeeById(id:string)  
+  GetEmployeeById(id:any)  
   {  
    return this.http.get<Employee>(this.Url + 'GetEmployeeById/?id=' + id);  
   }  
