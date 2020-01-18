@@ -22,13 +22,14 @@ export class EmprecordService {
   }
 
   getStates(countryId: number) {
-    return this.http.get(`${this.apiBaseUrl}api/states/${countryId}`).pipe(
+    debugger;
+    return this.http.get(`${this.apiBaseUrl}api/Employee/GetAllStateBasedOnCountry/?id=${countryId}`).pipe(
       catchError(this.handleError)
     );
   }
 
   getCities(stateId: number) {
-    return this.http.get(`${this.apiBaseUrl}api/cities/${stateId}`).pipe(
+    return this.http.get(`${this.apiBaseUrl}api/Employee/GetAllCityeBasedOnState/?id=${stateId}`).pipe(
       catchError(this.handleError)
     );
   }

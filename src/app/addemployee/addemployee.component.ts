@@ -74,8 +74,10 @@ debugger;
       Name: new FormControl(),  
       Department:new FormControl(),  
       Address:new FormControl(),  
-      City:new FormControl(),  
-      Country: new FormControl(''),
+      CountryId: new FormControl(''),
+      StateId: new FormControl(''),
+      CityId:new FormControl(""),  
+
   });  
   let Id = localStorage.getItem("id");  
 if(Id!=null)  
