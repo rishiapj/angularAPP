@@ -1,6 +1,6 @@
 export class City {
     id: string;  
     stateid: string;  
-    cityid: string;  
+    cityId: string;  
     name: string;  
 }

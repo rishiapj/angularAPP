@@ -1,6 +1,6 @@
 export class Country {
     id: string;  
-    countryid: string;  
+    countryId: string;  
     name: string;  
     code: string;  
 }

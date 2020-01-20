@@ -72,15 +72,15 @@ export class AddemployeeComponent implements OnInit {
         this.Addemployee.controls['Address'].setValue(emp.address);  
         this.Addemployee.controls['CountryId'].setValue(emp.country.countryId); 
         if (emp.country.countryId) {
-      this.emprecordService.getStates(Number(emp.country.countryId)).subscribe(
+        this.emprecordService.getStates(Number(emp.country.countryId)).subscribe(
         data => {
           this.states = data;     
         }
-      );
-    } else {
-      this.states = null;
-      this.cities = null;
-    }
+         );
+        } else {
+          this.states = null;
+          this.cities = null;
+        }
         this.Addemployee.controls['StateId'].setValue(emp.state.stateId); 
          if (emp.state.stateId) {
       this.emprecordService.getCities(Number(emp.state.stateId)).subscribe(
