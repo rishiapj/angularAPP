@@ -4,6 +4,7 @@ import { EmprecordService } from "../emprecord.service";
 import { Observable } from "rxjs";  
 import { Router } from '@angular/router';  
 import { first} from "rxjs/operators";
+import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
 
     @Component({  
       selector: 'app-employee',  
@@ -14,7 +15,15 @@ import { first} from "rxjs/operators";
       public emp: Employee[];  
       massage:String;  
       dataSaved=false;  
-      constructor(private router: Router,private emprecordService:EmprecordService) { }  
+      private columnDefs: ColDef[];
+        // gridApi and columnApi
+    private api: GridApi;
+    private columnApi: ColumnApi;
+      constructor(private router: Router,private emprecordService:EmprecordService) 
+      {
+        this.columnDefs = this.createColumnDefs();
+
+       }  
        Loademployee()  
        {  
           this.emprecordService.GetEmployeeRecord().pipe(first()).subscribe(emp=>{
@@ -42,4 +51,23 @@ import { first} from "rxjs/operators";
         localStorage.clear();
         this.Loademployee();  
       }  
+
+        // create some simple column definitions
+    private createColumnDefs() {
+      return [
+          {field: 'id'},
+          {field: 'name'},
+          {field: 'department'},
+          {field: 'city', valueGetter: (params) => params.data.city.name},
+          {field: 'country', valueGetter: (params) => params.data.country.name},
+      ]
+  }
+
+  // one grid initialisation, grap the APIs and auto resize the columns to fit the available space
+  onGridReady(params): void {
+    this.api = params.api;
+    this.columnApi = params.columnApi;
+
+    this.api.sizeColumnsToFit();
+}
     }

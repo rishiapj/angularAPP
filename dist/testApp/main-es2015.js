@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \r\n    <div class=\"row\">    \r\n      <div class=\"col-md-10 mx-auto\">    \r\n        <div class=\"card mx-4\">   \r\n          <div class=\"card-head p-4\">  \r\n              <div class=\"col-sm-12 btn btn-success\">  \r\n                  Employee's Information  \r\n                </div>  \r\n          </div>   \r\n          <div class=\"card-body p-4\">    \r\n       <form [formGroup]=\"AddEmployee\" (ngSubmit)=\"onFormSubmit(AddEmployee.value)\">  \r\n      <div class=\"col-sm-12\">  \r\n        <div class=\"card-body\">  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"name\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"department\">  \r\n            </div>  \r\n          </div>  \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"address\">  \r\n            </div>  \r\n          </div>  \r\n          <!-- <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \r\n            </div>  \r\n          </div>   \r\n          <div class=\"form-group \">  \r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <div class=\"col-sm-10\">  \r\n              <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \r\n            </div>  \r\n          </div>  -->\r\n          <div class=\"form-group\">\r\n            <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n            <select formControlName=\"CountryId\" class=\"form-control\" (change)=\"onChangeCountry($event.target.value)\">\r\n              <option value=\"\">..Select country..</option>\r\n              <option *ngFor=\"let country of countries\" [value]=\"country.countryId\">{{country.name}}</option>\r\n            </select>\r\n          </div>\r\n\r\n          <div class=\"form-group\">\r\n            <label for=\"State\">State</label>  \r\n            <select formControlName=\"StateId\" class=\"form-control\" (change)=\"onChangeState($event.target.value)\">\r\n              <option value=\"\">..Select state..</option>\r\n              <option *ngFor=\"let state of states\" [value]=\"state.stateId\">{{state.name}}</option>\r\n            </select>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n            <select formControlName=\"CityId\" class=\"form-control\">\r\n              <option value=\"\">..Select city..</option>\r\n              <option *ngFor=\"let city of cities\" [value]=\"city.cityId\">{{city.name}}</option>\r\n            </select>\r\n          </div>\r\n\r\n        </div>  \r\n      </div>  \r\n      <div class=\"col-6 text-right\">    \r\n          <button class=\"btn btn-primary px-10\" type=\"submit\" >{{btnText}} </button>  \r\n        </div>  \r\n    </form>  \r\n    <div class=\"row\"  *ngIf=\"dataSaved\">\r\n      <div class=\"col-xs-12\">\r\n        <p class=\"alert alert-success\">\r\n            <strong>{{massage}}</strong> \r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n \r\n    </div>    \r\n    </div>   \r\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"padding-top:40px;\">    \r\n  <div class=\"row\">    \r\n    <div class=\"col-md-10 mx-auto\">    \r\n      <div class=\"card mx-4\">   \r\n        <div class=\"card-head p-4\">  \r\n            <div class=\"col-sm-12 btn btn-success\">  \r\n                Employee's Information  \r\n              </div>  \r\n        </div>   \r\n        <div class=\"card-body p-4\">    \r\n     <form [formGroup]=\"Addemployee\" (ngSubmit)=\"onFormSubmit(Addemployee.value)\">  \r\n    <div class=\"col-sm-12\">  \r\n      <div class=\"card-body\">  \r\n        <!-- <div class=\"row\"> -->  \r\n        <div class=\"form-group \">  \r\n          <label class=\"col-sm-2 control-label\" for=\"Name\">Name</label>  \r\n          <div class=\"col-sm-10\">  \r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter name\" formControlName=\"Name\">  \r\n          </div>  \r\n        </div>  \r\n        <div class=\"form-group \">  \r\n          <label class=\"col-sm-2 control-label\" for=\"Department\">Department</label>  \r\n          <div class=\"col-sm-10\">  \r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Department\" formControlName=\"Department\">  \r\n          </div>  \r\n        </div>  \r\n        <div class=\"form-group \">  \r\n          <label class=\"col-sm-2 control-label\" for=\"Address\">Address</label>  \r\n          <div class=\"col-sm-10\">  \r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Address\" formControlName=\"Address\">  \r\n          </div>  \r\n        </div>  \r\n        <!-- <div class=\"form-group \">  \r\n          <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n          <div class=\"col-sm-10\">  \r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter City\" formControlName=\"City\">  \r\n          </div>  \r\n        </div>   \r\n        <div class=\"form-group \">  \r\n          <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n          <div class=\"col-sm-10\">  \r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter Country\" formControlName=\"Country\">  \r\n          </div>  \r\n        </div>  -->\r\n        <div class=\"form-group\">\r\n          <label class=\"col-sm-2 control-label\" for=\"Country\">Country</label>  \r\n          <select formControlName=\"CountryId\" class=\"form-control\" (change)=\"onChangeCountry($event.target.value)\">\r\n            <option value=\"\">..Select country..</option>\r\n            <option *ngFor=\"let country of countries\" [value]=\"country.countryId\">{{country.name}}</option>\r\n          </select>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n          <label class=\"col-sm-2 control-label\" for=\"State\">State</label>  \r\n          <select formControlName=\"StateId\" class=\"form-control\" (change)=\"onChangeState($event.target.value)\">\r\n            <option value=\"\">..Select state..</option>\r\n            <option *ngFor=\"let state of states\" [value]=\"state.stateId\">{{state.name}}</option>\r\n          </select>\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label class=\"col-sm-2 control-label\" for=\"City\">City</label>  \r\n          <select formControlName=\"CityId\" class=\"form-control\">\r\n            <option value=\"\">..Select city..</option>\r\n            <option *ngFor=\"let city of cities\" [value]=\"city.cityId\">{{city.name}}</option>\r\n          </select>\r\n        </div>\r\n\r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-6 text-right\">    \r\n        <button class=\"btn btn-primary px-10\" type=\"submit\" >{{btnText}} </button>  \r\n      </div>  \r\n  </form>  \r\n  <div class=\"row\"  *ngIf=\"dataSaved\">\r\n    <div class=\"col-xs-12\">\r\n      <p class=\"alert alert-success\">\r\n          <strong>{{massage}}</strong> \r\n\r\n      </p>\r\n    </div>\r\n  </div>\r\n\r\n  </div>    \r\n  </div>   \r\n</div>");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city.name}}</td>  \r\n          <td>{{e.country.name}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city.name}}</td>  \r\n          <td>{{e.country.name}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n\r\n    <div>\r\n\r\n      <ag-grid-angular\r\n    style=\"width: 500px; height: 500px;\"\r\n    class=\"ag-theme-balham\"\r\n    [rowData]=\"emp\"\r\n    [columnDefs]=\"columnDefs\"\r\n    >\r\n</ag-grid-angular>\r\n    </div>\r\n  </div>");
 
 /***/ }),
 
@@ -455,7 +455,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _emprecord_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../emprecord.service */ "./src/app/emprecord.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _services_config_config_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/config/config.service */ "./src/app/services/config/config.service.ts");
+/* harmony import */ var _country__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../country */ "./src/app/country.ts");
+/* harmony import */ var _state__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../state */ "./src/app/state.ts");
+/* harmony import */ var _city__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../city */ "./src/app/city.ts");
+
+
 
 
 
@@ -463,63 +467,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AddemployeeComponent = class AddemployeeComponent {
-    constructor(fb, router, route, emprecordService) {
-        this.fb = fb;
+    constructor(router, formBuilder, emprecordService) {
         this.router = router;
-        this.route = route;
+        this.formBuilder = formBuilder;
         this.emprecordService = emprecordService;
         this.dataSaved = false;
         this.EmployeeIdUpdate = "0";
         this.btnText = "Save";
-        // Check for route params
-        this.route.params.subscribe(params => {
-            this.index = params['id'];
-            // check if ID exists in route & call update or add methods accordingly
-            if (this.index && this.index != null && this.index != undefined) {
-                this.getEmployeeDetails(this.index);
-            }
-            else {
-                this.createForm(null);
-            }
-        });
-    }
-    onFormSubmit() {
-        const Emp = this.AddEmployee.value;
-        this.InsertEmployee(Emp);
-    }
-    getEmployeeDetails(index) {
-        let studentDetail = this.emprecordService.GetEmployeeById(index);
-        this.createForm(studentDetail);
-    }
-    // If this is update request then auto fill form
-    createForm(data) {
-        if (data == null) {
-            this.AddEmployee = this.fb.group({
-                name: [this.employee.name, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50)]],
-                department: [this.employee.department, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50)]],
-                phone: [this.employee.phone, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _services_config_config_service__WEBPACK_IMPORTED_MODULE_5__["ValidationService"].checkLimit(5000000000, 9999999999)]],
-                email: [this.employee.email, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _services_config_config_service__WEBPACK_IMPORTED_MODULE_5__["ValidationService"].emailValidator]],
-                countryid: [this.employee.country.CountryId],
-                stateid: [this.employee.country.CountryId],
-                cityid: [this.employee.city.CityId],
-            });
-            this.emprecordService.getCountries().subscribe(data => this.countries = data);
-        }
-        else {
-            this.AddEmployee = this.fb.group({
-                name: [data.studentData.name, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50)]],
-                department: [data.studentData.department, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50)]],
-                phone: [data.studentData.phone, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _services_config_config_service__WEBPACK_IMPORTED_MODULE_5__["ValidationService"].checkLimit(5000000000, 9999999999)]],
-                email: [data.studentData.email, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _services_config_config_service__WEBPACK_IMPORTED_MODULE_5__["ValidationService"].emailValidator]],
-                countryid: [this.employee.country.CountryId],
-                stateid: [this.employee.country.CountryId],
-                cityid: [this.employee.city.CityId],
-            });
-        }
     }
     InsertEmployee(employee) {
         if (this.EmployeeIdUpdate != "0")
             employee.Id = this.EmployeeIdUpdate;
+        var country = new _country__WEBPACK_IMPORTED_MODULE_5__["Country"]();
+        var city = new _city__WEBPACK_IMPORTED_MODULE_7__["City"]();
+        var state = new _state__WEBPACK_IMPORTED_MODULE_6__["State"]();
+        country.countryId = this.Addemployee.controls['CountryId'].value;
+        city.cityId = this.Addemployee.controls['CityId'].value;
+        state.stateId = this.Addemployee.controls['StateId'].value;
+        employee.country = country;
+        employee.city = city;
+        employee.state = state;
         this.emprecordService.InsertEmployee(employee).subscribe(() => {
             if (this.EmployeeIdUpdate == "0") {
                 this.massage = 'Saved Successfully';
@@ -531,47 +498,66 @@ let AddemployeeComponent = class AddemployeeComponent {
             this.router.navigate(['/addemployee']);
         });
     }
-    // EmployeeEdit(id: string) {  
-    //   debugger;     
-    //   this.emprecordService.GetEmployeeById(id).subscribe(emp => {  
-    //     this.massage = null;  
-    //     this.dataSaved = false;  
-    //     debugger;  
-    //     this.EmployeeIdUpdate=id;
-    //     this.Addemployee.controls['Name'].setValue(emp.name);  
-    //     this.Addemployee.controls['Department'].setValue(emp.department);  
-    //     this.Addemployee.controls['City'].setValue(emp.city);  
-    //     this.Addemployee.controls['Country'].setValue(emp.country);  
-    //     this.Addemployee.controls['Address'].setValue(emp.address);  
-    //   });  
-    //   debugger;  
-    //   this.btnText ="Update";
-    // }  
+    onFormSubmit() {
+        const Emp = this.Addemployee.value;
+        this.InsertEmployee(Emp);
+    }
+    EmployeeEdit(id) {
+        this.emprecordService.getCountries().subscribe(data => this.countries = data);
+        this.emprecordService.GetEmployeeById(id).subscribe(emp => {
+            this.massage = null;
+            this.dataSaved = false;
+            this.EmployeeIdUpdate = id;
+            this.Addemployee.controls['Name'].setValue(emp.name);
+            this.Addemployee.controls['Department'].setValue(emp.department);
+            this.Addemployee.controls['Address'].setValue(emp.address);
+            this.Addemployee.controls['CountryId'].setValue(emp.country.countryId);
+            if (emp.country.countryId) {
+                this.emprecordService.getStates(Number(emp.country.countryId)).subscribe(data => {
+                    this.states = data;
+                });
+            }
+            else {
+                this.states = null;
+                this.cities = null;
+            }
+            this.Addemployee.controls['StateId'].setValue(emp.state.stateId);
+            if (emp.state.stateId) {
+                this.emprecordService.getCities(Number(emp.state.stateId)).subscribe(data => this.cities = data);
+            }
+            else {
+                this.cities = null;
+            }
+            this.Addemployee.controls['CityId'].setValue(emp.city.cityId);
+        });
+        this.btnText = "Update";
+    }
     clearform() {
-        // debugger;  
-        // this.Addemployee.controls['Name'].setValue("");  
-        // this.Addemployee.controls['Department'].setValue("");  
-        // this.Addemployee.controls['Address'].setValue("");  
-        // this.Addemployee.controls['City'].setValue("");  
-        // this.Addemployee.controls['Country'].setValue("");  
+        this.Addemployee.controls['Name'].setValue("");
+        this.Addemployee.controls['Department'].setValue("");
+        this.Addemployee.controls['Address'].setValue("");
+        this.Addemployee.controls['City'].setValue("");
+        this.Addemployee.controls['Country'].setValue("");
     }
     ngOnInit() {
-        this.AddEmployee = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
-        // this.employee.: new FormControl(),  
-        //   Department:new FormControl(),  
-        //   Address:new FormControl(),  
-        //   CountryId: new FormControl(''),
-        //   StateId: new FormControl(''),
-        //   CityId:new FormControl(""),  
+        this.Addemployee = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+            Name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            Department: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            Address: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
+            CountryId: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+            StateId: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+            CityId: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](""),
+            City: this.formBuilder.group(new _city__WEBPACK_IMPORTED_MODULE_7__["City"]()),
+            Country: this.formBuilder.group(new _country__WEBPACK_IMPORTED_MODULE_5__["Country"]()),
+            State: this.formBuilder.group(new _state__WEBPACK_IMPORTED_MODULE_6__["State"]()),
         });
-        //   let Id = localStorage.getItem("id");  
-        // if(Id!=null)  
-        // {  
-        //   this.EmployeeEdit(Id) ;  
-        //  }
-        //  this.emprecordService.getCountries().subscribe(
-        //   data => this.countries = data
-        // );
+        let Id = localStorage.getItem("id");
+        if (Id != null) {
+            this.EmployeeEdit(Id);
+        }
+        else {
+            this.emprecordService.getCountries().subscribe(data => this.countries = data);
+        }
     }
     onChangeCountry(countryId) {
         if (countryId) {
@@ -595,9 +581,8 @@ let AddemployeeComponent = class AddemployeeComponent {
     }
 };
 AddemployeeComponent.ctorParameters = () => [
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
     { type: _emprecord_service__WEBPACK_IMPORTED_MODULE_3__["EmprecordService"] }
 ];
 AddemployeeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -718,6 +703,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./add-user/add-user.component */ "./src/app/add-user/add-user.component.ts");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__);
+
 
 
 
@@ -750,13 +738,50 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]
+            _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
+            ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__["AgGridModule"].withComponents([])
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
 
+
+
+/***/ }),
+
+/***/ "./src/app/city.ts":
+/*!*************************!*\
+  !*** ./src/app/city.ts ***!
+  \*************************/
+/*! exports provided: City */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "City", function() { return City; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class City {
+}
+
+
+/***/ }),
+
+/***/ "./src/app/country.ts":
+/*!****************************!*\
+  !*** ./src/app/country.ts ***!
+  \****************************/
+/*! exports provided: Country */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Country", function() { return Country; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Country {
+}
 
 
 /***/ }),
@@ -799,19 +824,17 @@ let EmployeeComponent = class EmployeeComponent {
         this.router = router;
         this.emprecordService = emprecordService;
         this.dataSaved = false;
+        this.columnDefs = this.createColumnDefs();
     }
     Loademployee() {
-        debugger;
         this.emprecordService.GetEmployeeRecord().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])()).subscribe(emp => {
             this.emp = emp;
         });
     }
     EmployeeEdit(id) {
-        debugger;
         localStorage.removeItem("id");
         localStorage.setItem("id", id.toString());
         this.router.navigate(['/addemployee'], { queryParams: { Id: id } });
-        debugger;
     }
     Deleteemployee(id) {
         if (confirm("Are You Sure To Delete this Informations")) {
@@ -820,11 +843,21 @@ let EmployeeComponent = class EmployeeComponent {
                 this.massage = "Deleted Successfully";
             });
             this.router.navigate(['/employee']);
+            this.Loademployee();
         }
     }
     ngOnInit() {
         localStorage.clear();
         this.Loademployee();
+    }
+    // create some simple column definitions
+    createColumnDefs() {
+        return [
+            { field: 'id' },
+            { field: 'name' },
+            { field: 'country' },
+            { field: 'results' }
+        ];
     }
 };
 EmployeeComponent.ctorParameters = () => [
@@ -1108,58 +1141,19 @@ LoginPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/services/config/config.service.ts":
-/*!***************************************************!*\
-  !*** ./src/app/services/config/config.service.ts ***!
-  \***************************************************/
-/*! exports provided: ConfigService, ValidationService */
+/***/ "./src/app/state.ts":
+/*!**************************!*\
+  !*** ./src/app/state.ts ***!
+  \**************************/
+/*! exports provided: State */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfigService", function() { return ConfigService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValidationService", function() { return ValidationService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "State", function() { return State; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
-
-let ConfigService = class ConfigService {
-    constructor() {
-        this.apiURL = "http://localhost/saNG4-Demo-App/api/";
-    }
-};
-ConfigService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
-], ConfigService);
-
-class ValidationService {
-    static emailValidator(control) {
-        // RFC 2822 compliant regex
-        if (control.value.match(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/)) {
-            return null;
-        }
-        else {
-            return { 'invalidEmailAddress': true };
-        }
-    }
-    static passwordValidator(control) {
-        // {6,100}           - Assert password is between 6 and 100 characters
-        // (?=.*[0-9])       - Assert a string has at least one number
-        if (control.value.match(/^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{6,100}$/)) {
-            return null;
-        }
-        else {
-            return { 'invalidPassword': true };
-        }
-    }
-    static checkLimit(min, max) {
-        return (c) => {
-            if (c.value && (isNaN(c.value) || c.value < min || c.value > max)) {
-                return { 'range': true };
-            }
-            return null;
-        };
-    }
+class State {
 }
 
 

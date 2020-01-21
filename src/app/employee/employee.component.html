@@ -47,4 +47,16 @@
     <!-- <ul class="pagination">  
       <pagination-controls (pageChange)="p = $event"></pagination-controls>  
     </ul>   -->
+
+    <div>
+
+      <ag-grid-angular
+    style="width: 500px; height: 500px;"
+    (gridReady)="onGridReady($event)"
+    class="ag-theme-balham"
+    [rowData]="emp"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
+    </div>
   </div>
