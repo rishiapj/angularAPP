@@ -5,6 +5,7 @@ import { Observable } from "rxjs";
 import { Router } from '@angular/router';  
 import { first} from "rxjs/operators";
 import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
+import { ButtonRendererComponent } from '../rendrere/button-renderer-component';
 
     @Component({  
       selector: 'app-employee',  
@@ -22,7 +23,9 @@ import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
     frameworkComponents: any;
       constructor(private router: Router,private emprecordService:EmprecordService) 
       {
-      
+        this.frameworkComponents = {
+          buttonRenderer: ButtonRendererComponent,
+        }
         this.columnDefs = this.createColumnDefs();
 
 
@@ -67,9 +70,15 @@ import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
           }},
           {headerName: 'Employee Depatrment',field: 'department',   width: 100},
           {headerName: 'Employee City',field: 'city',   width: 100, valueGetter: (params) => params.data.city.name},
-          {headerName: 'Employee Country',field: 'country',   width: 100, valueGetter: (params) => params.data.country.name}
-        
-        
+          {headerName: 'Employee Country',field: 'country',   width: 100, valueGetter: (params) => params.data.country.name},
+          {
+            headerName: 'Button Col 1',
+            cellRenderer: 'buttonRenderer',
+            cellRendererParams: {
+              onClick: this.EmployeeCellEdit.bind(this),
+              label: 'Click 1'
+            }
+          }
         
       ]
   }

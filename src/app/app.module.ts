@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginPageComponent } from './login/login.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { ButtonRendererComponent } from './rendrere/button-renderer-component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { AgGridModule } from 'ag-grid-angular';
     LoginPageComponent,
     HeaderComponent,
     HomeComponent,
-    AddUserComponent
+    AddUserComponent,
+    ButtonRendererComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { AgGridModule } from 'ag-grid-angular';
     FormsModule,
     BrowserModule,
     ReactiveFormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([ButtonRendererComponent])
   ],
   providers: [],
   bootstrap: [AppComponent]
