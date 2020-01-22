@@ -19,9 +19,12 @@ import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
         // gridApi and columnApi
     private api: GridApi;
     private columnApi: ColumnApi;
+    frameworkComponents: any;
       constructor(private router: Router,private emprecordService:EmprecordService) 
       {
+      
         this.columnDefs = this.createColumnDefs();
+
 
        }  
        Loademployee()  
@@ -35,6 +38,9 @@ import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
        localStorage.setItem("id",id.toString());  
         this.router.navigate(['/addemployee'], { queryParams: { Id: id } });  
       }  
+      EmployeeCellEdit(e) {  
+       alert(e);
+       }  
        Deleteemployee(id: string) {  
         if (confirm("Are You Sure To Delete this Informations")) {  
           this.emprecordService.DeleteEmployee(id).subscribe(  
@@ -55,11 +61,16 @@ import { ColDef, GridApi, ColumnApi } from 'ag-grid-community';
         // create some simple column definitions
     private createColumnDefs() {
       return [
-          {field: 'id'},
-          {field: 'name'},
-          {field: 'department'},
-          {field: 'city', valueGetter: (params) => params.data.city.name},
-          {field: 'country', valueGetter: (params) => params.data.country.name},
+          {field: 'id', hide:true},
+          {headerName: 'Employee Name',field: 'name',   width: 100,  editable: true,filter: 'agTextColumnFilter',  cellRenderer: function(params) {
+            return '<a href="/addemployee/' + params.data.id + '">' + params.value + '</a>';
+          }},
+          {headerName: 'Employee Depatrment',field: 'department',   width: 100},
+          {headerName: 'Employee City',field: 'city',   width: 100, valueGetter: (params) => params.data.city.name},
+          {headerName: 'Employee Country',field: 'country',   width: 100, valueGetter: (params) => params.data.country.name}
+        
+        
+        
       ]
   }
 

@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city.name}}</td>  \r\n          <td>{{e.country.name}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n\r\n    <div>\r\n\r\n      <ag-grid-angular\r\n    style=\"width: 500px; height: 500px;\"\r\n    class=\"ag-theme-balham\"\r\n    [rowData]=\"emp\"\r\n    [columnDefs]=\"columnDefs\"\r\n    >\r\n</ag-grid-angular>\r\n    </div>\r\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n    <div class=\"row\">  \r\n      <div class=\"col-sm-12 btn btn-success\">  \r\n        Employee's Information  \r\n      </div>  \r\n    </div>  \r\n    <div class=\"col-sm-12\" style=\"margin-bottom:20px;padding-top:20px;\">  \r\n      <div class=\"row\">  \r\n        <div class=\"col-sm-6\">  \r\n           <button type=\"button\" class=\"btn btn-primary\"  [routerLink]=\"['/addemployee']\">  \r\n            Add New Employee  \r\n          </button>   \r\n        </div>  \r\n        <div class=\"col-sm-6\">  \r\n          <!-- <input class=\"form-control\" type=\"text\" name=\"search\" [(ngModel)]=\"filter\" placeholder=\"Search\">   -->\r\n        </div>  \r\n      </div>  \r\n    </div>  \r\n  </div>  \r\n  <div class=\"container\" style=\"padding-top:20px;\">  \r\n    <table class=\"table table-striped\">  \r\n      <thead class=\"thead-dark\">        \r\n        <th>Name</th>  \r\n        <th>Department</th>  \r\n        <th>Address</th>  \r\n        <th>City</th>  \r\n        <th>Country</th>  \r\n        <th>Action</th>  \r\n      </thead>  \r\n      <tbody>  \r\n        <tr *ngFor=\"let e of emp\">          \r\n          <td>{{e.name}}</td>  \r\n          <td>{{e.department}}</td>  \r\n          <td>{{e.address}}</td>  \r\n          <td>{{e.city.name}}</td>  \r\n          <td>{{e.country.name}}</td>\r\n          <td>  \r\n            <div class=\"btn-group\">  \r\n              <button type=\"button\" class=\"btn btn-primary mr-1\" (click)=\"EmployeeEdit(e.id)\">Edit</button>  \r\n              <button type=\"button\" class=\"btn btn-danger mr-1\" (click)=\"Deleteemployee(e.id)\">Delete</button>  \r\n            </div>  \r\n          </td>  \r\n        </tr>  \r\n      </tbody>    \r\n    </table>  \r\n    <!-- <ul class=\"pagination\">  \r\n      <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>  \r\n    </ul>   -->\r\n\r\n    <div>\r\n\r\n      <ag-grid-angular\r\n    style=\"width: 500px; height: 500px;\"\r\n    (gridReady)=\"onGridReady($event)\"\r\n    class=\"ag-theme-balham\"\r\n    [rowData]=\"emp\"\r\n    [columnDefs]=\"columnDefs\"\r\n    >\r\n</ag-grid-angular>\r\n    </div>\r\n  </div>");
 
 /***/ }),
 
@@ -705,6 +705,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_user_add_user_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./add-user/add-user.component */ "./src/app/add-user/add-user.component.ts");
 /* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
 /* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _renderer_button_renderer_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./renderer/button-renderer.component */ "./src/app/renderer/button-renderer.component.ts");
+
 
 
 
@@ -739,7 +741,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
-            ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__["AgGridModule"].withComponents([])
+            ag_grid_angular__WEBPACK_IMPORTED_MODULE_13__["AgGridModule"].withComponents([_renderer_button_renderer_component__WEBPACK_IMPORTED_MODULE_14__["ButtonRendererComponent"]])
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -814,6 +816,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emprecord_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../emprecord.service */ "./src/app/emprecord.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _renderer_button_renderer_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../renderer/button-renderer.component */ "./src/app/renderer/button-renderer.component.ts");
+
 
 
 
@@ -824,6 +828,9 @@ let EmployeeComponent = class EmployeeComponent {
         this.router = router;
         this.emprecordService = emprecordService;
         this.dataSaved = false;
+        this.frameworkComponents = {
+            buttonRenderer: _renderer_button_renderer_component__WEBPACK_IMPORTED_MODULE_5__["ButtonRendererComponent"],
+        };
         this.columnDefs = this.createColumnDefs();
     }
     Loademployee() {
@@ -835,6 +842,9 @@ let EmployeeComponent = class EmployeeComponent {
         localStorage.removeItem("id");
         localStorage.setItem("id", id.toString());
         this.router.navigate(['/addemployee'], { queryParams: { Id: id } });
+    }
+    EmployeeCellEdit(e) {
+        alert(e);
     }
     Deleteemployee(id) {
         if (confirm("Are You Sure To Delete this Informations")) {
@@ -853,11 +863,27 @@ let EmployeeComponent = class EmployeeComponent {
     // create some simple column definitions
     createColumnDefs() {
         return [
-            { field: 'id' },
-            { field: 'name' },
-            { field: 'country' },
-            { field: 'results' }
+            { field: 'id', hide: true },
+            { headerName: 'Employee Name', field: 'name', width: 100, editable: true, filter: 'agTextColumnFilter', cellRenderer: function (params) {
+                    return '<a href="/addemployee/' + params.data.id + '">' + params.value + '</a>';
+                } },
+            { headerName: 'Employee Depatrment', field: 'department', width: 100 },
+            { headerName: 'Employee City', field: 'city', width: 100, valueGetter: (params) => params.data.city.name },
+            { headerName: 'Employee Country', field: 'country', width: 100, valueGetter: (params) => params.data.country.name },
+            { headerName: 'Action',
+                cellRenderer: 'buttonRenderer',
+                cellRendererParams: {
+                    onClick: this.EmployeeCellEdit.bind(this),
+                    label: 'Click 1'
+                }
+            }
         ];
+    }
+    // one grid initialisation, grap the APIs and auto resize the columns to fit the available space
+    onGridReady(params) {
+        this.api = params.api;
+        this.columnApi = params.columnApi;
+        this.api.sizeColumnsToFit();
     }
 };
 EmployeeComponent.ctorParameters = () => [
@@ -1136,6 +1162,52 @@ LoginPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")).default]
     })
 ], LoginPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/renderer/button-renderer.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/renderer/button-renderer.component.ts ***!
+  \*******************************************************/
+/*! exports provided: ButtonRendererComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ButtonRendererComponent", function() { return ButtonRendererComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+// Author: T4professor
+
+
+let ButtonRendererComponent = class ButtonRendererComponent {
+    agInit(params) {
+        this.params = params;
+        this.label = this.params.label || null;
+    }
+    refresh(params) {
+        return true;
+    }
+    onClick($event) {
+        if (this.params.onClick instanceof Function) {
+            // put anything into params u want pass into parents component
+            const params = {
+                event: $event,
+                rowData: this.params.node.data
+                // ...something
+            };
+            this.params.onClick(params);
+        }
+    }
+};
+ButtonRendererComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-button-renderer',
+        template: '<button type="button" (click)="onClick($event)">{{label}}</button>'
+    })
+], ButtonRendererComponent);
 
 
 
