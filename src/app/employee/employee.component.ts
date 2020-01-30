@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';  
+import { Component, OnInit  , Input , ViewChild, AfterViewInit } from '@angular/core';  
 import { Employee } from "../employee";  
 import { EmprecordService } from "../emprecord.service";  
 import { Observable } from "rxjs";  
